@@ -1,0 +1,40 @@
+@font-face {
+	font-family: norse;
+	src: url(./Norse-Bold.otf);
+}
+
+:root {
+	--green: #596d48;
+	--light: #e5e7eb;
+	--bgc: #f9fafb;
+	--white: #fff;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+	background-color: var(--bgc);
+}
+
+@media (min-width: 1024px) {
+	header {
+		background-image: url(../img/bgc-1862px.jpg);
+	}
+}
+
+@media (max-width: 1023px) {
+	header {
+		background-image: url(../img/bgc-1862px.jpg);
+	}
+}
+
+header {
+	width: 40%;
+	background-size: cover;
+	color: var(--white);
+}
+
+h1 {
+	font-family: norse, sans-serif;
+}
