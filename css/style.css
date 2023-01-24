@@ -21,6 +21,7 @@ div.content-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -31,7 +32,7 @@ div.content-wrapper {
 
 @media (max-width: 1023px) {
 	header {
-		background-image: url(../img/bgc-1862px.jpg);
+		background-image: url(../img/bgc-640px.jpg);
 	}
 }
 
@@ -88,7 +89,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 form > section,
@@ -99,13 +100,23 @@ form > p {
 button {
 	margin-left: 4rem;
 	padding: 1rem 3.5rem;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+	font-weight: 700;
 	width: fit-content;
+	background-color: var(--green);
+	color: #fff;
+	border-radius: 0.5rem;
 }
 
 section.intro {
 	font-size: 1.75rem;
 	font-weight: 700;
+}
+
+section.inputs {
+	background-color: #fff;
+	box-shadow: 0px 8px 14px -2px rgba(170, 170, 170, 1);
+	padding-bottom: 2rem;
 }
 
 section.intro > p,
@@ -126,10 +137,25 @@ label {
 
 label span {
 	text-transform: uppercase;
+	font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #666;
 }
 
 label input {
 	max-width: 16rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 0.25rem;
+	/* outline: none; */
+}
+
+label input:focus {
+	border: 1px solid #2fa6ff;
+	outline: 1px solid #2fa6ff;
+	box-shadow: 2px 4px 8px 0px rgba(170, 170, 170, 1);
 }
 
 footer {
