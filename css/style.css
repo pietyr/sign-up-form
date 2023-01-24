@@ -39,7 +39,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 40%;
+	min-width: 33%;
 	background-size: cover;
 	color: var(--white);
 }
@@ -89,6 +89,47 @@ form {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 3rem;
+}
+
+form > section,
+form > p {
+	padding-left: 4rem;
+}
+
+button {
+	margin-left: 4rem;
+	padding: 1rem 3.5rem;
+	font-size: 1.5rem;
+	width: fit-content;
+}
+
+section.intro {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+section.intro > p,
+div.label-wrapper {
+	max-width: 800px;
+}
+
+div.label-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 1.5rem;
+}
+label {
+	display: flex;
+	flex-direction: column;
+}
+
+label span {
+	text-transform: uppercase;
+}
+
+label input {
+	max-width: 16rem;
 }
 
 footer {
