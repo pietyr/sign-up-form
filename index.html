@@ -16,10 +16,12 @@
 	</head>
 	<body>
 		<header>
-			<h1>
-				<img src="./img/odin-logo.png" alt="Odin logo" />
-				<span>odin</span>
-			</h1>
+			<div class="heading-wrapper">
+				<h1>
+					<img src="./img/odin-logo.png" alt="Odin logo" />
+					<span>odin</span>
+				</h1>
+			</div>
 			<p>
 				Photo by
 				<a
@@ -33,53 +35,62 @@
 				>
 			</p>
 		</header>
-		<main>
-			<section>
-				<p>
-					This is not a real online service! You know you need
-					something like this in your life to help you realize your
-					deepest dreams. Sign up <span class="italic">now</span> to
-					get started.
-				</p>
-				<p>You <span class="italic">know</span> you want to.</p>
-			</section>
-			<form action="">
-				<section>
-					<h2>Let's do this!</h2>
-					<label>
-						<span>first name</span>
-						<input type="text" autocomplete="given-name" />
-					</label>
-					<label>
-						<span>last name</span>
-						<input type="text" autocomplete="family-name" />
-					</label>
-					<label>
-						<span>email</span>
-						<input type="email" autocomplete="email" />
-					</label>
-					<label>
-						<span>phone number</span>
-						<input type="tel" autocomplete="tel" />
-					</label>
-					<label>
-						<span>password</span>
-						<input type="password" autocomplete="new-password" />
-					</label>
-					<label>
-						<span>confirm password</span>
-						<input type="password" autocomplete="new-password" />
-					</label>
-				</section>
-				<button type="submit">Create Account</button>
-				<p>Already have an account? <a href="">Log in</a></p>
-			</form>
+		<div class="content-wrapper">
+			<main>
+				<form action="">
+					<section>
+						<p>
+							This is not a real online service! You know you need
+							something like this in your life to help you realize
+							your deepest dreams. Sign up
+							<span class="italic">now</span> to get started.
+						</p>
+						<p>You <span class="italic">know</span> you want to.</p>
+					</section>
+
+					<section>
+						<h2>Let's do this!</h2>
+						<label>
+							<span>first name</span>
+							<input type="text" autocomplete="given-name" />
+						</label>
+						<label>
+							<span>last name</span>
+							<input type="text" autocomplete="family-name" />
+						</label>
+						<label>
+							<span>email</span>
+							<input type="email" autocomplete="email" />
+						</label>
+						<label>
+							<span>phone number</span>
+							<input type="tel" autocomplete="tel" />
+						</label>
+						<label>
+							<span>password</span>
+							<input
+								type="password"
+								autocomplete="new-password"
+							/>
+						</label>
+						<label>
+							<span>confirm password</span>
+							<input
+								type="password"
+								autocomplete="new-password"
+							/>
+						</label>
+					</section>
+					<button type="submit">Create Account</button>
+					<p>Already have an account? <a href="">Log in</a></p>
+				</form>
+			</main>
 			<footer>
 				<p>
 					&copy; 2022
 					<a href="https://github.com/pietyr">Piotr Kisiel</a>
 				</p>
 			</footer>
-		</main>
+		</div>
 	</body>
 </html>
