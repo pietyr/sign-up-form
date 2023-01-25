@@ -179,7 +179,21 @@ input.invalid {
 	outline: 1px solid #ed4337;
 }
 
+span.error {
+	color: #ed4337;
+	font-size: 0.75em;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
 footer {
 	flex-grow: 0;
 	text-align: center;
+}
+
+span.required {
+	font-size: 0.75em;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #ed4337;
 }

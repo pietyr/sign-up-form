@@ -54,18 +54,19 @@
 						<div class="label-wrapper">
 							<label>
 								<span>first name</span>
-								<input
-									type="text"
-									autocomplete="given-name"
-									required
-								/>
+								<input type="text" autocomplete="given-name" />
 							</label>
 							<label>
 								<span>last name</span>
 								<input type="text" autocomplete="family-name" />
 							</label>
 							<label>
-								<span>email</span>
+								<span
+									>email
+									<span class="required"
+										>(required)</span
+									></span
+								>
 								<input
 									type="email"
 									autocomplete="email"
@@ -77,16 +78,29 @@
 								<input type="tel" autocomplete="tel" />
 							</label>
 							<label>
-								<span>password</span>
+								<span
+									>password
+									<span class="required"
+										>(required)</span
+									></span
+								>
 								<input
+									class="password"
 									type="password"
 									autocomplete="new-password"
 									required
 								/>
+								<span class="error"></span>
 							</label>
 							<label>
-								<span>confirm password</span>
+								<span
+									>confirm password
+									<span class="required"
+										>(required)</span
+									></span
+								>
 								<input
+									class="confirm-password"
 									type="password"
 									autocomplete="new-password"
 									required
